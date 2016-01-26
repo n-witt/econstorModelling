@@ -1,0 +1,7 @@
+cache
+*.npy
+*model*
+.project
+.pydevproject
+.ipynb_checkpoints
+samples

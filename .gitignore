@@ -1,4 +1,5 @@
 cache
+*.pyc
 *.npy
 *model*
 .project
@@ -6,3 +7,4 @@ cache
 .ipynb_checkpoints
 samples
 cache-20160127/
+docEmbeddings/

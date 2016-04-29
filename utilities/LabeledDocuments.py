@@ -110,3 +110,8 @@ class LabeledDocument(object):
                         json.dump(v, fh)
                         logging.debug('Yielded from Calculation')
                         yield LabeledSentence(words=v.split(), tags=[k])
+
+if __name__ == '__main__':
+    foo = iter(LabeledDocument(wd='../samples'))
+    next(foo)
+    print('aal')

@@ -91,7 +91,7 @@ class LabeledDocument(object):
             filename = doc['filename']
                         
             if not self.normalizeText:
-                yield TaggedDocument(words=text.split(), tags=filename)
+                yield TaggedDocument(words=text.split(), tags=[filename])
             else:
                 if filename in keySet and os.path.exists(os.path.join(cacheDir, filename)):
                     # the file has already been normalized, let's
